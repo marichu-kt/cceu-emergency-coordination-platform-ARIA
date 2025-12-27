@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+/* Design Tokens */
+:root {
+  /* Colors */
+  --primary: #2563EB;
+  --surface: #FFFFFF;
+  --background: #F8FAFC;
+  --text: #111827;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+  --success: #16A34A;
+  --warning: #F59E0B;
+  --error: #DC2626;
+  --info: #0284C7;
+  
+  /* Priority Accents */
+  --p1: #EF4444;
+  --p2: #F59E0B;
+  --p3: #10B981;
+  
+  /* Spacing Scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  
+  /* Border Radius */
+  --radius-card: 12px;
+  --radius-button: 8px;
+  
+  /* Shadows */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Typography */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text);
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

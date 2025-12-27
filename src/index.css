@@ -1,0 +1,443 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ✅ Forzamos tema claro (evita problemas con “light/dark”) */
+  color-scheme: light;
+
+  /* ✅ TOKENS de tu UI (los que usas con var(--...)) */
+  --background: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;        /* <- MÁS OSCURO: arregla “very low contrast” */
+  --border: #e2e8f0;
+
+  --primary: #2563eb;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #dc2626;
+
+  --p1: #ef4444;
+
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  /* ❌ Quitamos el centrado de Vite */
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* ✅ Placeholders con contraste */
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* ✅ Links (opcional) */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ❌ Importante: NO estilizar botones globalmente
+   (tú ya tienes Button del design-system / Tailwind) */
+button {
+  font: inherit;
+}
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ✅ Forzamos tema claro (evita problemas con “light/dark”) */
+  color-scheme: light;
+
+  /* ✅ TOKENS de tu UI (los que usas con var(--...)) */
+  --background: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;        /* <- MÁS OSCURO: arregla “very low contrast” */
+  --border: #e2e8f0;
+
+  --primary: #2563eb;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #dc2626;
+
+  --p1: #ef4444;
+
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  /* ❌ Quitamos el centrado de Vite */
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* ✅ Placeholders con contraste */
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* ✅ Links (opcional) */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ❌ Importante: NO estilizar botones globalmente
+   (tú ya tienes Button del design-system / Tailwind) */
+button {
+  font: inherit;
+}
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ✅ Forzamos tema claro (evita problemas con “light/dark”) */
+  color-scheme: light;
+
+  /* ✅ TOKENS de tu UI (los que usas con var(--...)) */
+  --background: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;        /* <- MÁS OSCURO: arregla “very low contrast” */
+  --border: #e2e8f0;
+
+  --primary: #2563eb;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #dc2626;
+
+  --p1: #ef4444;
+
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  /* ❌ Quitamos el centrado de Vite */
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* ✅ Placeholders con contraste */
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* ✅ Links (opcional) */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ❌ Importante: NO estilizar botones globalmente
+   (tú ya tienes Button del design-system / Tailwind) */
+button {
+  font: inherit;
+}
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ✅ Forzamos tema claro (evita problemas con “light/dark”) */
+  color-scheme: light;
+
+  /* ✅ TOKENS de tu UI (los que usas con var(--...)) */
+  --background: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;        /* <- MÁS OSCURO: arregla “very low contrast” */
+  --border: #e2e8f0;
+
+  --primary: #2563eb;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #dc2626;
+
+  --p1: #ef4444;
+
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  /* ❌ Quitamos el centrado de Vite */
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* ✅ Placeholders con contraste */
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* ✅ Links (opcional) */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ❌ Importante: NO estilizar botones globalmente
+   (tú ya tienes Button del design-system / Tailwind) */
+button {
+  font: inherit;
+}
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ✅ Forzamos tema claro (evita problemas con “light/dark”) */
+  color-scheme: light;
+
+  /* ✅ TOKENS de tu UI (los que usas con var(--...)) */
+  --background: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;        /* <- MÁS OSCURO: arregla “very low contrast” */
+  --border: #e2e8f0;
+
+  --primary: #2563eb;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #dc2626;
+
+  --p1: #ef4444;
+
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  /* ❌ Quitamos el centrado de Vite */
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* ✅ Placeholders con contraste */
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* ✅ Links (opcional) */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ❌ Importante: NO estilizar botones globalmente
+   (tú ya tienes Button del design-system / Tailwind) */
+button {
+  font: inherit;
+}
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ✅ Forzamos tema claro (evita problemas con “light/dark”) */
+  color-scheme: light;
+
+  /* ✅ TOKENS de tu UI (los que usas con var(--...)) */
+  --background: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;        /* <- MÁS OSCURO: arregla “very low contrast” */
+  --border: #e2e8f0;
+
+  --primary: #2563eb;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #dc2626;
+
+  --p1: #ef4444;
+
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  /* ❌ Quitamos el centrado de Vite */
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* ✅ Placeholders con contraste */
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* ✅ Links (opcional) */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ❌ Importante: NO estilizar botones globalmente
+   (tú ya tienes Button del design-system / Tailwind) */
+button {
+  font: inherit;
+}
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* ✅ Forzamos tema claro (evita problemas con “light/dark”) */
+  color-scheme: light;
+
+  /* ✅ TOKENS de tu UI (los que usas con var(--...)) */
+  --background: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;        /* <- MÁS OSCURO: arregla “very low contrast” */
+  --border: #e2e8f0;
+
+  --primary: #2563eb;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #dc2626;
+
+  --p1: #ef4444;
+
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  /* ❌ Quitamos el centrado de Vite */
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* ✅ Placeholders con contraste */
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* ✅ Links (opcional) */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ❌ Importante: NO estilizar botones globalmente
+   (tú ya tienes Button del design-system / Tailwind) */
+button {
+  font: inherit;
+}
+/* --- Leaflet: contraste y accesibilidad --- */
+.leaflet-control-attribution {
+  color: #0f172a !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-radius: 8px !important;
+  padding: 4px 8px !important;
+}
+
+.leaflet-control-attribution a {
+  color: var(--primary) !important;
+  text-decoration: underline !important;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.leaflet-popup-close-button {
+  color: #0f172a !important;
+  font-size: 18px !important;
+}
